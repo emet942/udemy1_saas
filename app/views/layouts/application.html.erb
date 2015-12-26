@@ -25,10 +25,20 @@
       <% end %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "About", about_path %></li>
-          <li><%= link_to "Contact Us", new_contact_path %></li>
-        </ul>
+      <div class="nav navbar-nav navbar-right">
+        <% if current_user %>
+          <%= button_to "Close Locker", destroy_user_session_path, method: :delete, class: 'btn btn-default navbar-btn' %>
+        <% else %>
+          <%= link_to "Open Locker", new_user_session_path, class: 'btn btn-primary navbar-btn list-btn', method: :get %>
+          <%= link_to "Join the Team", root_path, class: 'btn btn-success navbar-btn list-btn', method: :get %>
+        <% end %>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact Us", new_contact_path %></li>
+      </ul>
+      
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
