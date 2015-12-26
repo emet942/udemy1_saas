@@ -4,7 +4,7 @@
   <br>
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
-      <h2>Open Your Locker</h2>
+      <h3>Open Your Locker</h3>
 
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="field form-group">
@@ -23,7 +23,7 @@
         <% end -%>
 
         <div class="actions form-group">
-          <%= f.submit "Open", class: 'btn btn-success' %>
+          <%= f.submit "Open", class: 'btn btn-primary' %>
         </div>
       <% end %>
 
