@@ -1,9 +1,9 @@
 class SessionsController < ApplicationController
 
-	def create
+	def new
 	end
 
-	def new
+	def create
 	end
 
 	def delete
