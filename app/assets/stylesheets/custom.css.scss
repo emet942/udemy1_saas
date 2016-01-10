@@ -7,11 +7,15 @@
 body {
 
 	/*Gradient from http://uigradients.com/#TealLove by @_ighosh.*/
-	background: #AAFFA9; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #AAFFA9 , #11FFBD); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #AAFFA9 , #11FFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #d42729; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #d42729 , #0157ae, #d42729); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #d42729 , #0157ae, #d42729); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
 	color: #000000;
+}
+
+body {
+	background: #74747D;
 }
 
 .row {
