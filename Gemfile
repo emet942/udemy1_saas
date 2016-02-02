@@ -44,7 +44,8 @@ gem 'devise'
 gem 'figaro'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'rake'
+gem 'activesupport', '4.2.4'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -58,6 +59,5 @@ group :development do
   gem 'web-console', '2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  
-end
 
+end
